@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -39,6 +40,8 @@ public class BaseTest {
 	
 	@BeforeMethod
 	public void setUp(ITestResult result) {
+//		DesiredCapabilities cap =  new DesiredCapabilities();
+//		cap.setCapability(null, false);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
