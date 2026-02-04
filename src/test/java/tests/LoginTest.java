@@ -11,7 +11,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test
 	public void testValidLogin() {
-		
+		//code for push to master
 		test = ExtentReportManager.createTest("Login Test");
 		test.info("Navigating to url");
 		LoginPage loginPage = new LoginPage(driver);

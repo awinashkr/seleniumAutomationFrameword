@@ -22,11 +22,35 @@ public class FirstApiTest {
 //		
 //		ValidatableResponse valRes = resp.then();
 //		valRes.statusCode(200);
+		
+//Get		https://dummy.restapiexample.com/api/v1/employees
+//Get		    https://dummy.restapiexample.com/api/v1/employee/1
+//Post			https://dummy.restapiexample.com/api/v1/create	
+//PUT				https://dummy.restapiexample.com/api/v1/update/21
+//DELETE					https://dummy.restapiexample.com/api/v1/delete/2
+		
+		
+		//hello
+		
+		
+		
 		RestAssured.given()
 					.when()
 					.get("https://dummy.restapiexample.com/api/v1/employees")
 					.then()
 					.statusCode(200);
+		
+		RestAssured.given()
+		.when()
+		.get("https://dummy.restapiexample.com/api/v1/employees")
+		.then()
+		.statusCode(200);
+		
+		RestAssured.given()
+		.when()
+		.get("https://dummy.restapiexample.com/api/v1/employees")
+		.then()
+		.statusCode(200);
 		
 		
 		
